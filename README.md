@@ -1,8 +1,11 @@
 # ESP32-Connect-and-use-SSD1351-1.5-Colour-OLE
 
 Install the SSD13XX Library
+
 Download the library from:
+
 https://github.com/sumotoy/SSD_13XX
+
 Unpack  and copy to the IDE Libraries Folder
 Go to the Libraries Folder and then open the folder ‘SSD_13XX’
 Then Open the folder ‘_settings’
