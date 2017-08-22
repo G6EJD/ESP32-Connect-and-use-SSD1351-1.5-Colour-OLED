@@ -19,9 +19,15 @@ Use Notepad to open the file ‘SSD_13XX_settings.h’
 Edit the lines thus:
 
 /*----------------------------------------------------------------------------------
+
 	//#include "../_display/SSD_1331_96x64.h“  ‘Add comment markers
+
 	//#include "../_display/SSD_1331_REDPCB.h"
+
 	//#include "../_display/SSD_1332_96x64.h"
+
 	#include "../_display/SSD_1351_128x128.h“ ‘Remove comment markers for this display type
+	
 	-----------------------------------------------------------------------------------*/
+	
 Save the file and Exit, start the IDE
