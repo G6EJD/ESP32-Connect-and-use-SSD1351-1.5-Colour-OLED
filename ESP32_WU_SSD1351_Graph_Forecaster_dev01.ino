@@ -66,14 +66,14 @@ enum image_names { // enumerated table uused to point to images for drawRGBBitma
 #define ORANGE      0xFC40
 #define WHITE       0xFFFF
 
-String apikey   = "2aaedf86898e4dd7";
+String apikey   = "----------------";
 String country  = "UK";
 String city     = "MELKSHAM";
 String time_str, press_hour;
 int    last_press_hour;
 
-const char* ssid     = "SKYAE43F";
-const char* password = "QDMSWSFMQL";
+const char* ssid     = "yourSSID";
+const char* password = "yourPASSWORD";
 const char* host     = "api.wunderground.com";
  
 String currCondString; // string to hold received API weather data
