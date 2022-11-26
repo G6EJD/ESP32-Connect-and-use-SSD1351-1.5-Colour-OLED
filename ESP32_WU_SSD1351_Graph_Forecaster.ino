@@ -1,6 +1,7 @@
 #include <WiFi.h>
 #include <ArduinoJson.h>     // https://github.com/bblanchon/ArduinoJson
 #include "time.h"
+#include <SSD_13XX.h>        //https://github.com/sumotoy/OLED_SSD1351
 
 unsigned long        lastConnectionTime = 0;          // Last time you connected to the server, in milliseconds
 const unsigned long  postingInterval = 10L*60L*1000L; // Delay between updates, in milliseconds, WU allows 500 requests per-day maximum, this sets it to every 30-mins or 48/day
@@ -29,6 +30,18 @@ enum image_names { // enumerated table uused to point to images for drawRGBBitma
 #define YELLOW      0xFFE0
 #define ORANGE      0xFC40
 #define WHITE       0xFFFF
+
+#define _cs   17  // goes to TFT CS
+#define _dc   16  // goes to TFT DC
+#define _mosi 23  // goes to TFT MOSI
+#define _sclk 18  // goes to TFT SCK/CLK
+#define _rst  5   // ESP RST to TFT RESET
+#define _miso     // Not connected
+//       3.3V     // Goes to TFT LED  
+//       5v       // Goes to TFT Vcc
+//       Gnd      // Goes to TFT Gnd   
+
+SSD_13XX tft = SSD_13XX(_cs, _dc, _rst);
 
 String apikey   = "----------------";
 String country  = "UK";
