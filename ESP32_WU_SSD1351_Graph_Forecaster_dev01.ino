@@ -1,8 +1,8 @@
 #include <WiFi.h>
-#include <ArduinoJson.h>     // https://github.com/bblanchon/ArduinoJson
+#include <ArduinoJson.h>     // https://github.com/bblanchon/ArduinoJson v5
 #include "time.h"
 #include <SPI.h>
-#include <SSD_13XX.h>
+#include <SSD_13XX.h>        //https://github.com/sumotoy/OLED_SSD1351
 #include "images/sunny.c"
 #include "images/mostlysunny.c"
 #include "images/cloudy.c"
