@@ -17,7 +17,7 @@
 
 
 #include <SPI.h>
-#include <SSD_13XX.h>
+#include <SSD_13XX.h>        //https://github.com/sumotoy/OLED_SSD1351
 
 // For the ESP32
 #define _cs   17  // goes to TFT CS
@@ -39,9 +39,6 @@ long unsigned debug_start = millis();
 while (!Serial && ((millis() - debug_start) <= 5000));
   tft.begin(false);
   delay(30);
-  //the following it's mainly for Teensy
-  //it will help you to understand if you have choosed the
-  //wrong combination of pins!
   errorCode = tft.getErrorCode();
   if (errorCode != 0) {
 	  Serial.print("Init error! ");
